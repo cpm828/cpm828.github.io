@@ -12,7 +12,7 @@
   <meta content="black" name="apple-mobile-web-app-status-bar-style" />
   <meta content="telephone=no" name="format-detection" />
   <link rel="shortcut icon" href="https://cpm828.github.io/cpm-ui/demo/favicon.ico">
-  <title>cpm828.github.io</title>
+  <title>PimiChen</title>
   <style>
     * {
       margin: 0;
@@ -27,8 +27,8 @@
       font-family: Avenir,Helvetica,Arial,sans-serif;
     }
     h2{
-      height: 10rem;
-      line-height: 10rem;
+      height: 9rem;
+      line-height: 9rem;
       font-size: 2.6rem;
       text-align: center;
       color: #333;
@@ -45,6 +45,7 @@
       font-size: 1.2rem;
       padding-right: 1.2rem;
       border-bottom: 1px solid #eee;
+      box-sizing: border-box;
     }
     ul li a,
     ul li a:link,
@@ -59,6 +60,9 @@
       tap-highlight-color: rgba(0, 0, 0, 0);
       text-decoration: none;
       position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     ul li a::after {
       content: "";
@@ -74,16 +78,42 @@
       margin-top: -5px;
       right: 0;
     }
+    ul li a span.desc{
+      font-size: 0.96rem;
+      margin-right: 20px;
+      color: #555;
+    }
   </style>
 </head>
 
 <body>
-  <h2>Github Pages</h2>
+  <h2>Welcome</h2>
   <ul>
     <ul>
-      <li><a href="/blog">blog</a></li>
-      <li><a href="/cpm-ui">cpm-ui</a></li>
-      <li><a href="/cpm-ui-docs">cpm-ui-docs</a></li>
+      <li>
+        <a href="https://github.com/cpm828">
+          <span>Github</span>
+          <span class="desc"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/blog">
+          <span>Blog</span>
+          <span class="desc">个人博客</span>
+        </a>
+      </li>
+      <li>
+        <a href="/cpm-ui">
+          <span>cpm-ui</span>
+          <span class="desc">Vue移动端组件库</span>
+        </a>
+      </li>
+      <li>
+        <a href="/cpm-ui-docs">
+          <span>cpm-ui-docs</span>
+          <span class="desc">cpm-ui说明文档</span>
+        </a>
+      </li>
     </ul>
   </ul>
 </body>
