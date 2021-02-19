@@ -83,38 +83,81 @@
       margin-right: 20px;
       color: #555;
     }
+    /* pc样式 */
+    @media screen and (min-width:800px) {
+      ul{
+        width: 760px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        background: transparent;
+        padding: 0 20px;
+      }
+      ul li{
+        height: auto;
+        line-height: normal;
+        width: 170px;
+        padding: 20px 0;
+        background-color: #fff;
+        color: #303133;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+      }
+      ul li:hover{
+        box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+      }
+      ul li a,
+      ul li a:link,
+      ul li a:visited,
+      ul li a:hover,
+      ul li a:active {
+        height: auto;
+        line-height: normal;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      ul li a::after{
+        display: none;
+      }
+      ul li a span.desc{
+        margin-right: 0;
+        margin-top: 10px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <h2>Welcome</h2>
   <ul>
-    <ul>
-      <li>
-        <a href="https://github.com/cpm828">
-          <span>Github</span>
-          <span class="desc"></span>
-        </a>
-      </li>
-      <li>
-        <a href="/blog">
-          <span>Blog</span>
-          <span class="desc">个人博客</span>
-        </a>
-      </li>
-      <li>
-        <a href="/cpm-ui">
-          <span>cpm-ui</span>
-          <span class="desc">Vue移动端组件库</span>
-        </a>
-      </li>
-      <li>
-        <a href="/cpm-ui-docs">
-          <span>cpm-ui-docs</span>
-          <span class="desc">cpm-ui说明文档</span>
-        </a>
-      </li>
-    </ul>
+    <li>
+      <a href="https://github.com/cpm828">
+        <span>Github</span>
+        <span class="desc"></span>
+      </a>
+    </li>
+    <li>
+      <a href="/blog">
+        <span>Blog</span>
+        <span class="desc">个人博客</span>
+      </a>
+    </li>
+    <li>
+      <a href="/cpm-ui">
+        <span>cpm-ui</span>
+        <span class="desc">Vue移动端组件库</span>
+      </a>
+    </li>
+    <li>
+      <a href="/cpm-ui-docs">
+        <span>cpm-ui-docs</span>
+        <span class="desc">cpm-ui说明文档</span>
+      </a>
+    </li>
   </ul>
 </body>
 
