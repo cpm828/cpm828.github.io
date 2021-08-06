@@ -78,14 +78,14 @@
 
     // 相关配置
     const constraints = {
-      video: {
-        width: 1280,
-        heihgt: 720,
-      },
+      // video: {
+      //   width: 1280,
+      //   heihgt: 720,
+      // },
       // video: true, // 摄像
       // video: { facingMode: "user" }, // 移动设备优先使用前置摄像头
       // video: { facingMode: "environment" }, // 使用后置摄像头
-      // video: { facingMode: { exact: "environment" } }, // 强制使用后置摄像头
+      video: { facingMode: { exact: "environment" } }, // 强制使用后置摄像头
 
       audio: false, // 麦克风
     }
